@@ -1,0 +1,14 @@
+{
+  "name": "lice-automation",
+  "private": true,
+  "version": "1.0.0",
+  "engines": { "node": ">=18 <23" },
+  "scripts": {
+    "start": "n8n start",
+    "worker": "n8n worker",
+    "queue": "n8n queue"
+  },
+  "dependencies": {
+    "n8n": "^1.61.0"
+  }
+}
