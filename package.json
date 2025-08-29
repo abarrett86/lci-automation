@@ -12,6 +12,6 @@
     "queue": "n8n queue"
   },
   "dependencies": {
-    "n8n": "X.Y.Z"
+    "n8n": "1.95.3"
   }
 }
