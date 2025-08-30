@@ -1,1 +1,1 @@
-web: bash -c 'N8N_HOST=0.0.0.0 N8N_PORT=$PORT DB_POSTGRESDB_CONNECTION_STRING=postgres://uefc3paio6vsl0:pbfc5874c2fa6fa182b6a748dc875152ccb055083918da83d1611222af28a1696@co8c1665c0p5k.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/ddmhd7tkvnq9eb n8n start'
+web: bash -c 'N8N_HOST=0.0.0.0 N8N_PORT=$PORT n8n start'
