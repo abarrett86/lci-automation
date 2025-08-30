@@ -1,1 +1,1 @@
-web: bash -c 'export DB_POSTGRESDB_CONNECTION_TYPE=connectionString; export DB_POSTGRESDB_CONNECTION_STRING=$DATABASE_URL; export DB_POSTGRESDB_SSL=true; export DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED=false; N8N_HOST=0.0.0.0 N8N_PORT=$PORT n8n start'
+web: bash -c 'echo "--- ENV VARS ---"; env | sort; echo "--- END ENV VARS ---"; N8N_HOST=0.0.0.0 N8N_PORT=$PORT n8n start'
