@@ -1,1 +1,1 @@
-web: bash -c 'N8N_HOST=0.0.0.0 N8N_PORT=$PORT n8n start'
+web: bash -c 'echo "DBCS=$DB_POSTGRESDB_CONNECTION_STRING"; env | sort | grep DB_POSTGRESDB; N8N_HOST=0.0.0.0 N8N_PORT=$PORT n8n start'
