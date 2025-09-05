@@ -1,1 +1,1 @@
-web: bash -lc './.qgtunnel/bin/qgtunnel ./qgtunnel.yml & for i in {1..20}; do (command -v nc >/dev/null 2>&1 && nc -z 127.0.0.1 2222) && break; sleep 0.5; done; N8N_HOST=0.0.0.0 N8N_PORT=$PORT n8n start'
+web: bash -lc 'chmod 755 ./.qgtunnel/bin/qgtunnel; ./.qgtunnel/bin/qgtunnel ./qgtunnel.yml & N8N_HOST=0.0.0.0 N8N_PORT=$PORT n8n start'
