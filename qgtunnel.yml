@@ -1,3 +1,6 @@
+proxy:
+  endpoint: ${QGTUNNEL_URL}
+
 tunnels:
   ssh:
     proto: tcp
