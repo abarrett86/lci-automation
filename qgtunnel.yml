@@ -5,4 +5,5 @@ tunnels:
   ssh:
     proto: tcp
     addr: 127.0.0.1:2222
-    dest: "fmprod.laborci.com:22"
+    host: fmprod.laborci.com
+    port: 22
