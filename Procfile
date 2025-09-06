@@ -1,1 +1,1 @@
-web: chmod 755 ./.qgtunnel/bin/qgtunnel && ./.qgtunnel/bin/qgtunnel ./qgtunnel.yml & N8N_HOST=0.0.0.0 N8N_PORT=$PORT n8n start
+web: bash -lc 'chmod 755 ./.qgtunnel/bin/qgtunnel; export QGTUNNEL_CONFIG=./qgtunnel.yml; ./.qgtunnel/bin/qgtunnel & for i in {1..40}; do (echo > /dev/tcp/127.0.0.1/2222) >/dev/null 2>&1 && echo "[BOOT] qgtunnel listening on 127.0.0.1:2222" && break; sleep 0.5; done; N8N_HOST=0.0.0.0 N8N_PORT=$PORT n8n start'
