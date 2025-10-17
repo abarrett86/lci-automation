@@ -14,7 +14,7 @@
     "heroku-postbuild": "npm ci --omit=dev"
   },
   "dependencies": {
-    "n8n": "^1.115.2"
+    "n8n": "^1.116.1"
   },
   "overrides": {
     "ajv": "^8.12.0",
